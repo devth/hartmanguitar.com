@@ -1,4 +1,26 @@
+@import compass/reset
+@import superimagebg
+
 body
+  background: #000
   font:
-    family: Verdana
-    size: 10pt
+    family: Baskerville, Times, serif
+    size: 16pt
+  #content
+    width: 800px
+    background: white
+    margin: 0 auto
+    padding: 20px 100px
+    position: relative
+    z-index: 10
+
+    h1
+      font-size: 30px
+      margin-bottom: 20px
+      font-weight: bold
+    p
+      margin: 20px 0
+      line-height: 30px
+    p:first-child::first-letter
+      font-size: 60px
+      float: left

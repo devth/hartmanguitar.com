@@ -1,7 +1,12 @@
 !!!
 %html
   %head
-    %title StaticMatic
+    %title Bob Hartman
     = stylesheets
+    = javascripts "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"
+    = javascripts "jquery.superbgimage.min", :application
   %body
-    = yield
+    %fieldset#bg
+      = link_to "bg", "images/bg.jpg"
+    #content
+      = yield
