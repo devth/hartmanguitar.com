@@ -167,7 +167,7 @@ body {
 /* line 12 */
 body #nav {
   color: white;
-  background: url("images/bg_content.png");
+  background: url("../images/bg_content.png");
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 0px;
@@ -208,7 +208,7 @@ body #nav .contact li {
 /* line 38 */
 body #content {
   width: 800px;
-  background: url("images/bg_content.png");
+  background: url("../images/bg_content.png");
   color: white;
   margin: 0;
   padding: 25px 20px 20px 20px;
