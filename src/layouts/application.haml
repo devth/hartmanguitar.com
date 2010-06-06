@@ -8,5 +8,25 @@
   %body
     %fieldset#bg
       = link_to "bg", "images/bg.jpg"
+    #nav
+      %ul.nav
+        %li <a href="#">About</a>
+        %li <a href="#">Watch</a>
+        %li <a href="#">Listen</a>
+      .contact
+        %ul
+          %li Bob Hartman
+          %li 406.259.8051
+          %li
+            %a{ :href => "mailto:hartmanguitar@gmail.com" } hartmanguitar@gmail.com
+            
     #content
       = yield
+
+      #footer
+        &copy; 2010 Bob Hartman | 406.259.8051 | <a href="mailto:hartmanguitar@gmail.com">hartmanguitar@gmail.com</a>
+        %ul.nav
+          %li <a href="#">About</a>
+          %li <a href="#">Watch</a>
+          %li <a href="#">Listen</a>
+      

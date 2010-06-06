@@ -6,6 +6,7 @@ Compass.configuration do |config|
   # Please update this if it is or remove this message if it can stay the way it is.
   config.project_path = File.dirname(__FILE__)
   config.sass_dir = File.join('src', 'stylesheets')
+  config.images_dir = "images"
 end
 
 # sass_engine_options returns a hash, you can merge it with other options.

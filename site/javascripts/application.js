@@ -12,6 +12,21 @@ $(function(){
  
   // initialize SuperBGImage
   $('#bg').superbgimage().hide();
+
+
+  // WIRE CLICK HANDLERS for nav
+  $("ul.nav a").click(function(){
+   scrollToSection( $(this).text().toLowerCase() );
+   return false;
+  });
   
 });
 
+function scrollToSection( id ){
+
+	var target_offset = $("#"+id+"_section").offset();
+	var target_top = target_offset.top;	
+  if ( id == "about" ) target_top = 0;
+	
+  $('html, body').animate({scrollTop:(target_top-30)}, 900, 'swing');
+}
